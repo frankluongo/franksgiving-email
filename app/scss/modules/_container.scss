@@ -1,0 +1,40 @@
+$EMAIL_WIDTH: 640px;
+
+&__container {
+  display: block !important;
+  clear: both !important;
+  margin: 0 auto !important;
+  max-width: $EMAIL_WIDTH !important;
+
+  table {
+    width: 100% !important;
+    border-collapse: collapse;
+  }
+
+  .content {
+    background: white;
+    padding: 30px 35px;
+
+    &.footer {
+      background: none;
+
+      p {
+        margin-bottom: 0;
+        color: $footer-color;
+        text-align: center;
+        font-size: 14px;
+      }
+
+      a {
+        color: $footer-color;
+        text-decoration: none;
+        font-weight: bold;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+}

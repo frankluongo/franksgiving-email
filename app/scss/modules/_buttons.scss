@@ -1,0 +1,25 @@
+@mixin button-color($color) {
+  background: $color;
+  border: solid $color;
+  border-width: 10px 20px 8px;
+}
+
+&__button {
+  display: inline-block;
+  color: white;
+  @include button-color(map-get($colors, orange));
+  font-weight: bold;
+  border-radius: 4px;
+
+  &--green {
+    @include button-color(map-get($colors, green));
+  }
+
+  &--red {
+    @include button-color(map-get($colors, thxRed));
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}

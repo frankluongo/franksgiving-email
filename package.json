@@ -10,5 +10,8 @@
     "gulp-notify": "^3.2.0",
     "gulp-plumber": "^1.2.0",
     "gulp-rename": "^1.2.2"
+  },
+  "devDependencies": {
+    "gulp-imagemin": "^5.0.3"
   }
 }
